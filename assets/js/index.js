@@ -26,6 +26,7 @@ const cantidad = () =>{
 const cantidadmenos = () =>{
 
     let numerodos = document.querySelector(".cantidad");
+   
 
     //console.log(numero.innerHTML, "<---contenido del tag");
 
@@ -33,6 +34,9 @@ const cantidadmenos = () =>{
    // console.log(typeof contenido,"<---tipo de dato");
 
     contenidomenos = contenidomenos - 1;
+    if (contenidomenos<=0)
+        contenidomenos = 0;
+
     //console.log(contenidomenos, "<---- soy la resta de la cantidad");
 
     numerodos.innerHTML = contenidomenos;
@@ -68,7 +72,9 @@ const resta = () =>{
     let contenidoresta = Number(resta.innerHTML);
    //console.log(typeof contenidomulti,"<---tipo de dato");
 
+
    contenidoresta = contenidoresta-400000;
+   
   
     //console.log(contenidoresta, "<---- soy la resta con el precio correcto");
 
